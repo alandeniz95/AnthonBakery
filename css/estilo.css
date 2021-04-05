@@ -9,3 +9,8 @@
 .logoRedes{
   width:150px;
 }
+
+@media (max-width: 410px) {
+  .card-text {
+    height: 555px;
+  }
