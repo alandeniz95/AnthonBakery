@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="icon" href="img/logoAnthon.jpg">
+    <title>Anthon Bakery</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+        <!--Main Navigation-->
+    <header>
+      <style>
+        /* Carousel styling */
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+        .carousel-item:nth-child(1) {
+          background-image: url('img/lemonPie.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(2) {
+          background-image: url('img/coco.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(3) {
+          background-image: url('img/chocoBanana.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 720px;
+          }
+        }
+
+        .navbar .nav-link {
+          color: rgb(0, 238, 255) !important;
+        }
+      </style>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg" style="z-index: 2000;">
+        <div class="container-fluid">
+  
+          <a class="navbar-brand nav-link" href="#">
+            <img class="logoAnthon" src="img/logoAnthon.jpg" alt="">
+            <strong>Anthon Bakery</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobreAnthon">Sobre Anthon</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav d-flex flex-row">
+       
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://www.instagram.com/anthonbakery/" rel="nofollow"
+                  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://wa.link/4jypkq" rel="nofollow" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+       
+       
+      <!-- Carousel wrapper -->
+      <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h1 class="mb-3">Lemon Pie</h1>
+                  <h5 class="mb-4">¿Terminaste de cenar? Imaginá abrir la heladera y tener lemon pie esperándote 🍋</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h1 class="mb-3">Coco y dulce de leche</h1>
+                  <h5 class="mb-4">Los reto a encontrar una mejor combinación que coco y dulce de leche.... Difícil, ¿no?</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h1 class="mb-3">Tarta de chocolate y bananas caramelizadas<br> con coral de sal y vainilla.</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- Carousel wrapper -->
+    </header>
+    <!--Main Navigation-->
+
+    
+
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
+        <!--Section: Content-->
+        <section>
+          <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+              <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+                <img src="img/tocinoDeCielo.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 gx-5 mb-4">
+              <h4><strong>Tocino de Cielo</strong></h4>
+              <p class="text-muted">
+                Viajamos al Mediterráneo para ésta receta: <strong> Tocino de Cielo.</strong><br>
+                Las primeras noticias del tocino de cielo se remontan al año 1324, fecha en la cual fué creado por las monjas del Convento de Espíritu Santo de Jerez de la Frontera. Su origen está ligado a la elaboración del vino de la zona y al empleo masivo de claras de huevo usadas para la clarificación del mismo. Las yemas de huevo sobrantes eran entregadas a las religiosas, las cuales, con el fín de reutilizarlas, crearon el postre <strong>"tocino de cielo".</strong>  Con el tiempo, devino en uno de los postres más emblemáticos de la repostería española. El nombre hace referencia al parecido visual con el tocino de cerdo, mientras que el sufijo viene dado por las manos religiosas que lo elaboraban.
+                En textura recuerda al flan de toda la vida, pero al ser pura yema es un poco más sostenido.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="text-center" id="gallery">
+          <h2 class="mb-5"><strong>Algunos postres latinoamericanos</strong></h2>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="img/balcarce.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Balcarce</h5>
+                  <p class="card-text">En sus orígenes el postre fue conocido como <strong>“Imperial”</strong> y su historia se remonta a la confitería París de la ciudad de Balcarce, propiedad de Guillermo Talou. Luego, la marca fue vendida a una firma de Mar del Plata, dónde se lo rebautizó con el nombre de <strong>Balcarce</strong>, debido a su procedencia. 
+                    Es tan popular éste postre que tiene su propia fiesta en el mes de agosto, cuando se realiza la fiesta del postre de Balcarce cuyo objetivo es homenajear a su creador, Guillermo Talou.
+                    Está coformado por bizcochuelo, dulce de leche, crema batida, merengue, castañas en almibar, y coco rallado
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="img/chaja.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">El Chajá</h5>
+                  <p class="card-text">
+                    El popular postre uruguayo fué inventado en abril de 1927 por Orlando Castellano, propietario de la Confitería Las Familias en el departamento de Paysandú. El señor Castellano lo dió a probar a sus comensales, y uno de ellos, don Miguel Serra le respondio: <strong>"éste postre es suave como el Chajá"</strong>, haciendo referencia al ave de gran plumaje y cuerpo pequeño.
+                    Desde entonces su popularidad hizo que pueda conseguirse en la mayoría de los paises de Sudamérica.
+                    Está conformado por bizcochuelo, dulce de leche, crema chantilly, duraznos en almibar y merengue.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="img/torta3leches.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Torta tres leches</h5>
+                  <p class="card-text">
+                    Si bien el origen real se disputa principalmente entre Nicaragua y México, también hay quienes dicen que fueron inmigrantes latinos en EEUU, otros en Costa Rica, Ecuador, o Venezuela. Yo abusando de la confusión elijo Colombia porque fué en una feria colombiana dónde lo probé por primera vez.
+                    Básicamente es un bizcochuelo completamente embebido en una mezcla de diferentes leches, y cubierto de merengue. Nació como una campaña promocional realizada por una compañía productora de leche enlatada para aumentar sus ventas. Ésto puede haber sucedido hacia finales del siglo XIX o a comienzos del siglo XX, ya que la leche condensada y la evaporada estuvieron disponibles por primera vez entre las décadas de 1850 y 1870.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <section class="text-center">
+          <h2 class="mb-5"><strong>Algunos postres europeos</strong></h2>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="img/tiramisu.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Tiramisú</h5>
+                  <p class="card-text">Se dice que es una de las cinco palabras que conoce un no-italohablante. Es un postre que desde los '70 figura en las cartas de los restaurantes de todo el mundo, tiene historias de su creación prácticamente desde la edad media, todas de dudosa procedencia. A ciencia cierta, en la Toscana sentían debilidad por el triffle inglés, que los diplomáticos que viajaban a Inglaterra, y regresaban a Italia, hacían replicando las costumbres y recetas de los restaurantes caros de Londres. Se considera zuppa (como la zuppa inglese que venden en las panaderias y pizzerías porteñas como sopa inglesa), al ser galletitas in zuppa, o embebidas, generalmente en almibar intercaladas con crema, en este caso crema de queso mascarpone.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="img/carrotCake.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Carrot Cake</h5>
+                  <p class="card-text">
+                    Para conocer la historia de la carrot cake tenemos que remontarnos hasta la Edad Media. En aquella época, los endulzantes eran muy caros y difíciles de conseguir, por lo que realizar tortas y otros tipos de recetas de repostería resultaba algo complicado. Por ello, se extendió la costumbre de utilizar calabaza, zanahoria y remolacha, verduras excepcionalmente dulces, como endulzantes en la cocina. La popularidad del pastel de zanahoria resurgió en el Reino Unido debido al racionamiento durante la Segunda Guerra Mundial. Tan exitoso es éste pastel, que tiene su propio día, el 3 de febrero es el Día Mundial del Carrot Cake.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="img/concorde.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Torta Concorde</h5>
+                  <p class="card-text">
+                    En ésta oportunidad les traigo la <strong>Torta Concorde</strong>, una torta hecha en capas de merengue de cacao y mousse de chocolate. Creada en la década del '70 por Gaston Lenôtre, pastelero de la primer camada de chefs que trabajaron para la aerolinea de bandera, lo sirvió en el viaje inaugural del <strong>avión Concorde.</strong> Usando ésta torta aireada como sinónimo culinario del vuelo, tuvo gran aceptación y actualmente se puede conseguir en pastelerías de todo el mundo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-5" />
+
+    <!-- Sobre Anthon -->
+      <section id="sobreAnthon">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="img/logoAnthon.jpg " class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h3><strong>Sobre Anthon</strong></h3>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem est sapiente laboriosam! Quae earum nostrum neque doloribus cumque cupiditate tenetur praesentium, dicta, alias ad harum voluptatibus quibusdam aut quis reprehenderit, nesciunt magnam id corrupti? Commodi, dicta quam, impedit aut rerum ex culpa, eveniet vitae enim sed tempore iure quos ullam!
+            </p>
+            <h4><strong>Contactame</strong></h4>
+            <a href="https://www.instagram.com/anthonbakery/" rel="nofollow" target="_blank">
+              <img class="logoRedes" src="img/logoIG.png" alt="">
+            </a>
+            <br>
+            <a href="https://wa.link/4jypkq" rel="nofollow" target="_blank">
+              <img class="logoRedes" src="img/logoWhats.png" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+    <!-- Sobre Anthon -->
+      </div>
+    </main>
+    <!--Main layout-->
+
+    
+
+    <!--Footer-->
+    <footer class="">
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://www.instagram.com/anthonpluton/" target="_blank">Anthon Pluton</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
